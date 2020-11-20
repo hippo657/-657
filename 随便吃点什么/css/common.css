@@ -1,0 +1,83 @@
+/* 字体声明 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?76mc9l");
+  src: url("../fonts/icomoon.eot?76mc9l#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?76mc9l") format("truetype"),
+    url("../fonts/icomoon.woff?76mc9l") format("woff"),
+    url("../fonts/icomoon.svg?76mc9l#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  line-height: 120px;
+}
+.header .w {
+  display: flex;
+  justify-content: space-between;
+}
+.header .w img {
+  height: 100px;
+  vertical-align: middle;
+}
+.header ul {
+  width: 450px;
+  height: 120px;
+  line-height: 120px;
+  display: flex;
+}
+.header ul li {
+  flex: 1;
+  font-size: 16px;
+  list-style: none;
+  padding-left: 35px;
+}
+.header ul li:hover {
+  border-bottom: 2px solid red;
+}
+.header ul li a {
+  display: block;
+  height: 120px;
+}
+/* 尾部区域 */
+.footer {
+  width: 100%;
+  height: 160px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
+.goal ul {
+  display: flex;
+}
+.goal ul li {
+  flex: 1;
+  float: left;
+}
+.goal ul li .item {
+  float: left;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #89d45d;
+  font-size: 24px;
+  color: #fff;
+}
+.goal ul li .info {
+  margin-top: 60px;
+}
+.goal ul li .info h4 {
+  font-size: 14px;
+  color: #666666;
+}

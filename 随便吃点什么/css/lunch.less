@@ -1,0 +1,364 @@
+/* 字体声明 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?76mc9l");
+  src: url("../fonts/icomoon.eot?76mc9l#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?76mc9l") format("truetype"),
+    url("../fonts/icomoon.woff?76mc9l") format("woff"),
+    url("../fonts/icomoon.svg?76mc9l#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.header ul {
+  width: 500px;
+  li {
+    padding-left: 25px;
+  }
+  li:last-child {
+    padding-left: 20px;
+  }
+}
+// 广告区开始制作
+.ad {
+  img {
+    width: 1200px;
+    height: 400px;
+  }
+}
+.goal ul li .item {
+  background-color: #b61d1c;
+}
+
+// 主体部分制作开始
+.main {
+  position: relative;
+}
+// 推荐区域开始啦
+.recommend {
+  margin-top: 30px;
+  width: 600px;
+  height: 510px;
+  background-color: #b61d1c;
+  .recommend-h {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    h4 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 400;
+      padding-left: 15px;
+    }
+    a {
+      position: relative;
+      width: 75px;
+      font-size: 12px;
+      color: #fff;
+      &:hover {
+        color: #3c3c3c;
+      }
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-family: "icomoon";
+        content: "\e984";
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li {
+      flex: 33.33%;
+      height: 220px;
+      background-color: #fff;
+      border-top: 10px solid #b61d1c;
+      border-right: 10px solid #b61d1c;
+      a {
+        width: 100%;
+        height: 100%;
+        .pic {
+          width: 100%;
+          height: 65%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    li:nth-child(1) {
+      border-left: 10px solid #b61d1c;
+    }
+    li:nth-child(4) {
+      border-left: 10px solid #b61d1c;
+    }
+  }
+}
+.recommend ul li .info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.recommend ul li .info i {
+  font-size: 18px;
+  color: #df3033;
+  font-weight: 700;
+  padding-left: 58px;
+}
+.topic {
+  position: absolute;
+  top: 0px;
+  right: 140px;
+  font-size: 25px;
+  color: #333;
+  img {
+    width: 250px;
+  }
+}
+// 转盘制作
+.box {
+  position: absolute;
+  top: 130px;
+  right: 30px;
+  width: 440px;
+  height: 440px;
+  background-color: rgb(126, 63, 63);
+  border-radius: 50%;
+  margin: 30px auto;
+  padding: 20px;
+  overflow: hidden;
+}
+.lottery {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  box-shadow: 0 0 8px #000;
+}
+.block {
+  box-shadow: 0 0 1px #000 inset;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transform-origin: right bottom 0;
+  -webkit-transform-origin: right bottom 0;
+}
+.block:nth-child(odd) {
+  background-color:#b61d1c;
+}
+.block:nth-child(even) {
+  background-color:#ff7f9e;
+}
+.block:nth-child(1) {
+  transform: rotate(0deg) skewY(45deg);
+}
+.block:nth-child(2) {
+  transform: rotate(45deg) skewY(45deg);
+}
+.block:nth-child(3) {
+  transform: rotate(90deg) skewY(45deg);
+}
+.block:nth-child(4) {
+  transform: rotate(135deg) skewY(45deg);
+}
+.block:nth-child(5) {
+  transform: rotate(180deg) skewY(45deg);
+}
+.block:nth-child(6) {
+  transform: rotate(225deg) skewY(45deg);
+}
+.block:nth-child(7) {
+  transform: rotate(270deg) skewY(45deg);
+}
+.block:nth-child(8) {
+  transform: rotate(315deg) skewY(45deg);
+}
+.content {
+  padding-top: 20px;
+  width: 160px;
+  height: 150px;
+  transform-origin: center center 0;
+  transform: skewY(-45deg) rotate(-22.5deg) translate(10px, 70px);
+  -webkit-transform: skewY(-45deg) rotate(-22.5deg) translate(10px, 70px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.content .food {
+  width: 80px;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  line-height: 200%;
+}
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  background-color: #2a59ff;
+  position: absolute;
+  font-size: 28px;
+  top: 170px;
+  left: 170px;
+  cursor: pointer;
+  box-shadow: 0 0 14px #000 inset;
+  color: #fff;
+}
+.str {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  border-top: 60px solid #2b59ff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+// 饮品区开始
+.drink {
+  margin-top: 30px;
+  width: 600px;
+  height: 510px;
+  background-color: #b61d1c;
+  .drink-h {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+    h4 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 400;
+      padding-left: 15px;
+    }
+    a {
+      position: relative;
+      width: 75px;
+      font-size: 12px;
+      color: #fff;
+      &:hover {
+        color: #3c3c3c;
+      }
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-family: "icomoon";
+        content: "\e984";
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li {
+      flex: 33.33%;
+      height: 220px;
+      background-color: #fff;
+      border-top: 10px solid #b61d1c;
+      border-right: 10px solid #b61d1c;
+      a {
+        width: 100%;
+        height: 100%;
+        .pic {
+          width: 100%;
+          height: 65%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    li:nth-child(1) {
+      border-left: 10px solid #b61d1c;
+    }
+    li:nth-child(4) {
+      border-left: 10px solid #b61d1c;
+    }
+  }
+}
+.drink ul li .info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.drink ul li .info i {
+  font-size: 18px;
+  color: #df3033;
+  font-weight: 700;
+  padding-left: 58px;
+}
+// 用户输入区
+.user {
+  position: absolute;
+  top: 150px;
+  right: 80px;
+  width: 350px;
+  height: 350px;
+  background-color: #b61d1c;
+
+  .user-h {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .info {
+    input {
+      position: relative;
+      width: 290px;
+      height: 35px;
+      border: 1px solid #b61d1c;
+      margin: 10px 30px 30px;
+      padding-left: 35px;
+      &:hover {
+        border: 3px solid orange;
+      }
+    }
+    img {
+      height: 30px;
+      position: absolute;
+      top: 63px;
+      left: 32px;
+    }
+    .two {
+      top: 138px;
+    } 
+    .three {
+      top: 212.5px;
+    }
+    button {
+      width: 290px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border: 1px solid #b61d1c;
+      margin: 10px 30px 30px;
+      background-color: #fff;
+
+      &:hover {
+        background-color: orange;
+      }
+    }
+  }
+}

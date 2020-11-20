@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚餐店</title>
+    <link rel="stylesheet" href="css/dinnerShop.css">
+    <!-- 把favicon图标引入 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="enter-index.html" title="返回随便吃点什么首页">
+                    <img src=" images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="navBlack">
+                <a href="enter-index.html">首页</a>
+                <a href="breakfastStore.html">早餐店</a>
+                <a href="lunch.html">午餐店</a>
+                <a href="dinnerShop.html">晚餐店</a>
+                <a href="centre.html">个人中心</a>
+            </div>
+            <div class="shop">
+                <img src=" images/dinnerShop.png">
+            </div>
+        </div>
+        <div class="main">
+            <div class="eatAndDrink">
+                <div class="recommend">
+                    <p>晚餐菜品参考区</p>
+                    <a href="#" title="换一批" id="change1"><img src=" images/change.png" alt="换一批"
+                            style="width: 20px;height: auto;"></a>
+                    <a href="menu.html">
+                        <img src=" images/boiledPrawns.png">
+                        <img src=" images/tofu.png">
+                        <img src=" images/braisedFish.png">
+                        <img src=" images/roastDuck.png">
+                        <img src=" images/spicyHotPot.png">
+                        <img src=" images/curriedPotatoes.png">
+                    </a>
+                </div>
+                <div class="reference">
+                    <p>饮品参考区</p>
+                    <a href="#" title="换一批" id="change2"><img src=" images/change.png" alt="换一批"
+                            style="width: 20px;height: auto;"></a>
+                    <a href="drink.html">
+                        <img src=" images/drink3.png" id="drink">
+                        <img src=" images/jarSoup.png">
+                        <img src=" images/coconutJuice.png">
+                        <img src=" images/kola.png">
+                        <img src=" images/Sprite.png">
+                        <img src=" images/milkyTea.png">
+                        <img src=" images/Vitasoy.png">
+                    </a>
+                </div>
+            </div>
+            <div class="select">
+                <div class="turntable">
+                    <div class="card">
+                        <img src=" images/card.png">
+                    </div>
+                    <!-- 引入转盘的js/jquery文件 -->
+                    <script type="text/javascript" src=" js/jquery-3.2.1.js"></script>
+                    <!-- 大转盘制作开始 -->
+                    <div class="box">
+                        <div class="lottery">
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">白灼虾</div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">香煎豆腐</div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">红烧鱼</div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">烧鸭</div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">麻辣香锅</div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">咖喱土豆</div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">西红柿炒蛋</div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="content">
+                                    <div class="food">鱼香茄子</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">点击</div>
+                        <div class="str"></div>
+                    </div>
+                    <!-- 大转盘制作结束 -->
+                    <!-- 引入转盘js文件 -->
+                    <script type="text/javascript" src=" js/lottery.js"></script>
+                </div>
+                <div class="option">
+                    <p>自定义选项</p>
+                    <img src=" images/define.png">
+                    <input type="text" name="select" placeholder="请输入您的选项"><br>
+                    <button type="submit">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

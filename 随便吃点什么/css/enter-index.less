@@ -1,0 +1,264 @@
+.header .w ul li:hover {
+  border-bottom:none;
+}
+.header ul li:last-child {
+    flex: 4.2;
+}
+
+.header .w ul li .user {
+  img {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+  }
+  span {
+      font-size: 14px;
+  }
+}
+// 广告区域制作
+.ad {
+  width: 100%;
+  height: 400px;
+  background-color: #4caf50;
+}
+.ad_focus {
+  position: relative;
+}
+.ad_focus .swiper-container {
+  width: 1200px;
+  height: 400px;
+}
+.ad_focus .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.4;
+}
+.ad_focus .swiper-slide a {
+  width: 1200px;
+  height: 400px;
+}
+.ad_focus .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.ad_focus .swiper-slide-active,
+.ad_focus .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 999;
+  opacity: 1;
+}
+.ad_focus .swiper-button-next,
+.ad_focus .swiper-button-prev {
+  color: #333;
+  outline: none;
+}
+
+/* 今日推荐模块制作 */
+.recommend {
+  height: 273px;
+  margin-top: 20px;
+}
+.recommend_hd {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+.recommend_hd h5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+.recommend_hd a {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 75px;
+  font-size: 12px;
+}
+.recommend_hd a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "icomoon";
+  content: "\e984";
+}
+.recommend_bd ul li {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 235px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.recommend_bd ul li:hover {
+  box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.recommend_bd ul li:first-child {
+  border-left: 1px solid #dddddd;
+}
+.recommend_bd ul li:last-child {
+  border-right: 1px solid #dddddd;
+}
+.recommend_bd ul li:nth-child(-n + 5)::after {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  content: "";
+  width: 1px;
+  height: 62px;
+  background-color: #dddddd;
+}
+.recommend_bd ul li .pic {
+  width: 200px;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+}
+.recommend_bd ul li img {
+  width: 200px;
+  height: 160px;
+  margin-top: 20px;
+}
+.recommend_bd ul li .info {
+  text-align: center;
+  width: 200px;
+  height: 75px;
+}
+.recommend_bd ul li .info p {
+  font-size: 16px;
+}
+.recommend_bd ul li .info i {
+  font-size: 18px;
+  color: #df3033;
+  font-weight: 700;
+}
+
+// 今日菜单推荐模块
+.menu {
+  overflow: hidden;
+  margin-top: 35px;
+}
+.menu_hd {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+.menu_hd h5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+.menu_hd a {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 75px;
+  font-size: 12px;
+}
+.menu_hd a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "icomoon";
+  content: "\e984";
+}
+
+// 今日菜单区主体部分
+.menu_bd .classify .classify-li {
+  position: relative;
+  float: left;
+  width: 280px;
+  height: 290px;
+  border: 1px solid #dddddd;
+  margin-right: 26.66px;
+}
+
+.menu_bd .classify .classify-li .dt {
+  width: 280px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #89d45d;
+  color: #fff;
+}
+
+.menu_bd .classify .classify-li .dd {
+  width: 280px;
+  height: 245px;
+  ul li {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #89d45d;
+    &:hover {
+      background-color: #fff;
+      a {
+        color: #4a4a4a;
+      }
+    }
+  }
+}
+.menu_bd .classify .classify-li .dd a {
+  color: #fff;
+}
+.menu_bd .classify .classify-li:last-child {
+  margin-right: 0;
+}
+
+// 尾部制作区域
+.footer {
+  width: 100%;
+  height: 160px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
+.goal {
+  ul {
+    display: flex;
+  }
+  ul li {
+    flex: 1;
+    float: left;
+    .item {
+      float: left;
+      margin-top: 50px;
+      margin-left: 40px;
+      margin-right: 20px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border-radius: 30px;
+      background-color: #89d45d;
+      font-size: 24px;
+      color: #fff;
+    }
+    .info {
+      margin-top: 60px;
+      h4 {
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+  }
+}
